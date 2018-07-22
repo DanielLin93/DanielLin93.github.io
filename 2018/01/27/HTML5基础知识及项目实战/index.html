@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/paper_plane_32px_1215253_easyicon.net.ico?v=5.1.4">
+
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="HTML5," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="HTML5基础知识及项目实战HTML5基础概述 HTML：超文本标记语言（页面中不仅只有文字，而且可以呈现出图片、音视频等媒体资源） XHTML：它是HTML比较规范严谨的一代版本 XML：可扩展的标记语言（HTML中使用的标签都是W3C标准中规定的，XML允许我们自己扩展标签的），它的作用不是用来写页面结构的，而是用来存储一些数据的（以自己扩展的标签作为标识，清晰明了的展示出数据的结构…） HT">
+<meta name="keywords" content="HTML5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5基础知识及项目实战">
+<meta property="og:url" content="http://yoursite.com/2018/01/27/HTML5基础知识及项目实战/index.html">
+<meta property="og:site_name" content="林宇卿">
+<meta property="og:description" content="HTML5基础知识及项目实战HTML5基础概述 HTML：超文本标记语言（页面中不仅只有文字，而且可以呈现出图片、音视频等媒体资源） XHTML：它是HTML比较规范严谨的一代版本 XML：可扩展的标记语言（HTML中使用的标签都是W3C标准中规定的，XML允许我们自己扩展标签的），它的作用不是用来写页面结构的，而是用来存储一些数据的（以自己扩展的标签作为标识，清晰明了的展示出数据的结构…） HT">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-07-22T06:16:11.537Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML5基础知识及项目实战">
+<meta name="twitter:description" content="HTML5基础知识及项目实战HTML5基础概述 HTML：超文本标记语言（页面中不仅只有文字，而且可以呈现出图片、音视频等媒体资源） XHTML：它是HTML比较规范严谨的一代版本 XML：可扩展的标记语言（HTML中使用的标签都是W3C标准中规定的，XML允许我们自己扩展标签的），它的作用不是用来写页面结构的，而是用来存储一些数据的（以自己扩展的标签作为标识，清晰明了的展示出数据的结构…） HT">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/01/27/HTML5基础知识及项目实战/"/>
+
+
+
+
+
+  <title>HTML5基础知识及项目实战 | 林宇卿</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <a href="https://github.com/DainelLin93" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">林宇卿</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">林宇卿</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/27/HTML5基础知识及项目实战/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="林宇卿">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/WechatIMG18.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="林宇卿">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML5基础知识及项目实战</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-27T23:10:32+08:00">
+                2018-01-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="HTML5基础知识及项目实战"><a href="#HTML5基础知识及项目实战" class="headerlink" title="HTML5基础知识及项目实战"></a>HTML5基础知识及项目实战</h2><h3 id="HTML5基础概述"><a href="#HTML5基础概述" class="headerlink" title="HTML5基础概述"></a>HTML5基础概述</h3><blockquote>
+<p>HTML：超文本标记语言（页面中不仅只有文字，而且可以呈现出图片、音视频等媒体资源）</p>
+<p>XHTML：它是HTML比较规范严谨的一代版本</p>
+<p>XML：可扩展的标记语言（HTML中使用的标签都是W3C标准中规定的，XML允许我们自己扩展标签的），它的作用不是用来写页面结构的，而是用来存储一些数据的（以自己扩展的标签作为标识，清晰明了的展示出数据的结构…）</p>
+<p>HTML5：当前HTML最新的一代版本，也是非常成功的一代版本，目前市场上基本上都是基于H5规范进行开发的（它相对于传统的HTML更多的是增加一些有助于开发的内容，对原有规范的修改调整很少）</p>
+</blockquote>
+<p><code>XML</code><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">root</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">student</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>林<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">age</span>&gt;</span>9<span class="tag">&lt;/<span class="name">age</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">student</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">student</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>王<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">age</span>&gt;</span>27<span class="tag">&lt;/<span class="name">age</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">student</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">root</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><code>XHTML</code></p>
+<blockquote>
+<p>文档声明比较复杂，需要特殊强调当前的页面需要严谨一些<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;!DOCTYPE html</span><br><span class="line">        PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span><br><span class="line">        &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span><br><span class="line">&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;Title&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p><code>HTML</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;</span><br><span class="line">&quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;Title&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p><code>HTML5</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&apos;en&apos;&gt;&lt;!--声明页面的语言模式：english，如果页面中出现了英文单词，浏览器会自主发起是否翻译的功能--&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">	    &lt;!--指定当前页面的编码格式是国际统一编码格式：UTF-8  GB2312中国编码...--&gt;</span><br><span class="line">		&lt;meta charset=&apos;UTF-8&apos;&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="HTML5提供的新语法规范"><a href="#HTML5提供的新语法规范" class="headerlink" title="HTML5提供的新语法规范"></a>HTML5提供的新语法规范</h3><p><strong><code>对原有语义化标签的升级</code></strong></p>
+<blockquote>
+<p>语义化标签（标签语义化）：每一个HTML标签都有自己特殊的含义，我们在搭建页面结构的时候，应该让合理的标签做合适的事情</p>
+<p>HTML5中新增加一些语义化标签：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">article：文章区域</span><br><span class="line">header：头部区域</span><br><span class="line">footer：尾部区域</span><br><span class="line">main：主体内容区域</span><br><span class="line">section：普通区域，用来做区域划分</span><br><span class="line">figure：配图区域</span><br><span class="line">figcaption：配图说明区域</span><br><span class="line">aside：与主体内容无关的区域（一般用来打广告）</span><br><span class="line">nav：导航区域</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">=&gt;这些语义化标签在兼容它的浏览器中都是块级标签</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>H5中新增加一些标记标签<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mark：用来标记需要高量显示的文本</span><br><span class="line">time：用来标记日期文本</span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>H5中对于原有的标签还有一些调整<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">strong：之前是加粗，现在是重点朗读（效果还是加粗，但是语义不一样了）</span><br><span class="line">small：之前是变小，现在是附属细则（效果还是变小）</span><br><span class="line">hr：之前是一条直线，现在是分割线，用来分隔两个区域</span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>H5中删除一些不经常使用的标签：这里的删除不是不让用（用了也不报错），只是按照最新标准没有语义了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">font：之前是标记字体修改某些文字样式的，现在呢我们不建议使用了</span><br><span class="line">center：之前是使某些内容居中，但是目前我们都是基于CSS样式控制居中，不在使用这个标签</span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>目前不管是在PC端开发还是在移动端开发，我们更应该使用H5规范的语义化标签搭建页面的结构</p>
+<p>问题：<br>IE6~8中不能识别这些新增加的语义化标签，我们无法为其设置具体的样式</p>
+<p>解决：<br>在当前页面的HEAD中（CSS后），我们导入一个JS插件：html5.min.js，它就是用来把页面中所有用到的不兼容的H5语义化标签进行兼容处理</p>
+<p>1、把页面中所有不兼容的标签进行替换<br>2、把CSS中使用标签选择器设置的样式（标签是H5标签）也替换成其它方式<br>…</p>
+<p>标准浏览器中不需要引用，只有IE6~8中才需要（使用条件注释来区分浏览器）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">	</span><br><span class="line">	&lt;!--[if lt IE 9]&gt;</span><br><span class="line">    &lt;script src=&quot;js/html5.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;![endif]--&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;!--条件注释中的代码要严格区分大小写以及空格等细节问题--&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p><strong><code>H5中对于表单元素的升级</code></strong></p>
+<blockquote>
+<p>传统表单元素<br>form<br>input：text、password（暗纹输入）、button、submit、reset、file、hidden、radio、checkbox…<br>button<br>select<br>label<br>textarea<br>…</p>
+<p>H5对于表单的升级<br>1、给input设置了很多新的类型<br>search<br>email<br>tel<br>number<br>range<br>color<br>date<br>time<br>…</p>
+<p>[优势]<br>1)功能强大了<br>2)使用合适的类型，在移动的开发的时候，用户输入，可以调取出最符合输入内容格式的虚拟键盘，方便用户操作<br>3)部分类型提供了表单验证（内置验证机制：和我们自己写的正则验证不太一样，但是也可以凑合 [ CSS中可以验证、JS中也可以验证 ]）</p>
+<p>2、给input新增一个属性：placeholder，给表单框做默认的信息提示</p>
+<p>3、二级下拉框（select一级下拉框）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; id=&quot;department&quot; list=&quot;departmentList&quot;&gt;</span><br><span class="line">&lt;datalist id=&quot;departmentList&quot;&gt;</span><br><span class="line">    &lt;option value=&quot;市场部&quot;&gt;市场部&lt;/option&gt;</span><br><span class="line">    &lt;option value=&quot;技术部&quot;&gt;技术部&lt;/option&gt;</span><br><span class="line">    &lt;option value=&quot;总裁办&quot;&gt;总裁办&lt;/option&gt;</span><br><span class="line">&lt;/datalist&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>H5针对于表单元素升级的部分，在IE低版本（有的IE9和10都不兼容）中不兼容，而且没办法处理兼容，所以我们一般移动端使用这些新特性，PC端还是延续传统的操作办法；</p>
+<p>H5中的表单验证（内置规则不是特别好），所以真实项目中的表单验证依然延续传统的正则验证完成</p>
+</blockquote>
+<p><strong><code>placeholder兼容处理</code></strong></p>
+<blockquote>
+<p>整个IE浏览器对于placeholder兼容性都不好<br>1、IE10+虽然兼容，但是文本框获取焦点后，提示信息就消失了<br>2、IE9-不兼容这个属性<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">~<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">//=&gt;获取页面中所有具备DATA-PLACE自定义属性的INPUT</span></span><br><span class="line">    <span class="keyword">var</span> inputList = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'input'</span>),</span><br><span class="line">        inputAry = [];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; inputList.length; i++) &#123;</span><br><span class="line">        <span class="keyword">var</span> item = inputList[i];</span><br><span class="line">        item.getAttribute(<span class="string">'data-place'</span>) !== <span class="literal">null</span> ? inputAry.push(item) : <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//=&gt;非IE浏览器中,我们只需要把自定义属性值存放在PLACE-HOLDER属性中即可,浏览器可以自己根据这个属性做好提示的工作</span></span><br><span class="line">    <span class="keyword">if</span> (!<span class="regexp">/(MSIE|Trident)/i</span>.test(navigator.userAgent)) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> k = <span class="number">0</span>; k &lt; inputAry.length; k++) &#123;</span><br><span class="line">            <span class="keyword">var</span> itemInp = inputAry[k];</span><br><span class="line">            itemInp.placeholder = itemInp.getAttribute(<span class="string">'data-place'</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//=&gt;IE浏览器(包含IE EDGE):不用内置的PLACE-HOLDER,而是采用我们自己设定的方式来处理</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> z = <span class="number">0</span>; z &lt; inputAry.length; z++) &#123;</span><br><span class="line">        <span class="keyword">var</span> inputItem = inputAry[z],</span><br><span class="line">            inputText = inputItem.getAttribute(<span class="string">'data-place'</span>);</span><br><span class="line">        inputItem.placeholder = <span class="string">''</span>;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">         * 1、新创建一个SPAN,把其存放在INPUT它爹末尾(作为INPUT的弟弟)</span></span><br><span class="line"><span class="comment">         * 2、给SPAN设置一定的样式</span></span><br><span class="line"><span class="comment">         *  相对于其父级元素定位</span></span><br><span class="line"><span class="comment">         *  和INPUT的基础样式类似</span></span><br><span class="line"><span class="comment">         * 3、INPUT或者SPAN都要绑定相关的事件行为:完成和内置PLACE-HOLDER相同的效果</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">var</span> spanTip = <span class="built_in">document</span>.createElement(<span class="string">'span'</span>);</span><br><span class="line">        spanTip.innerHTML = inputText;</span><br><span class="line">        spanTip.className = <span class="string">'placeLike'</span>;</span><br><span class="line">        spanTip.style.cursor = <span class="string">'text'</span>;</span><br><span class="line">        inputItem.parentNode.appendChild(spanTip);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//=&gt;把每一个INPUT和SPAN的索引进行存储(并且把SPAN-TIP作为属性值存储在INPUT的自定义属性上,方便后期获取使用)</span></span><br><span class="line">        inputItem.index = spanTip.index = z;</span><br><span class="line">        inputItem.spanTip = spanTip;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//=&gt;SPAN的点击行为:点击SPAN让INPUT获取对应光标</span></span><br><span class="line">        spanTip.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            inputAry[<span class="keyword">this</span>.index].focus();</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//=&gt;控制INPUT的输入行为(建议使用DOM2事件绑定:防止后期再其它的地方也需要通过KEYUP或者KEYDOWN行为处理其它的事情)</span></span><br><span class="line">        inputItem.onkeydown = inputItem.onkeyup = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> value = <span class="keyword">this</span>.value,</span><br><span class="line">                spanTip = <span class="keyword">this</span>.spanTip;</span><br><span class="line">            spanTip.style.display = value.length &gt; <span class="number">0</span> ? <span class="string">'none'</span> : <span class="string">'block'</span>;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;();</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>页面结构<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/reset.min.css&quot;&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        .inputBox &#123;</span><br><span class="line">            position: relative;</span><br><span class="line">            margin: 20px;</span><br><span class="line">            width: 200px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .inputBox input, .inputBox .placeLike &#123;</span><br><span class="line">            display: block;</span><br><span class="line">            padding: 0 10px;</span><br><span class="line">            width: 178px;</span><br><span class="line">            height: 30px;</span><br><span class="line">            line-height: 30px;</span><br><span class="line">            border: 1px solid green;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .inputBox .placeLike &#123;</span><br><span class="line">            position: absolute;</span><br><span class="line">            top: 0;</span><br><span class="line">            left: 0;</span><br><span class="line">            z-index: 100;</span><br><span class="line">            color: #AAA;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div class=&quot;inputBox&quot;&gt;</span><br><span class="line">    &lt;input type=&quot;text&quot; data-place=&quot;请输入用户名&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;inputBox&quot;&gt;</span><br><span class="line">    &lt;input type=&quot;password&quot; data-place=&quot;请输入密码&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;inputBox&quot;&gt;</span><br><span class="line">    &lt;input type=&quot;email&quot; data-place=&quot;请输入邮箱&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script src=&quot;js/placeholder.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p><strong><code>H5中其它新增内容</code></strong></p>
+<blockquote>
+<p>增加了新的媒体解决方案<br>音频：audio<br>视频：video</p>
+<p>传统的音视频播放是基于flash来完成的，需要浏览器中安装 adobe flash player 插件</p>
+<p>现在只需要基于audio或者video播放即可，但是对于音视频的格式有限制，对于浏览器也有限制</p>
+<p>移动端对于flash的支持不好，但是基本上都支持audio和video<br>PC端的IE浏览器（低版本）不支持audio和video，但是支持flash</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>H5中增加了canvas（绘图）<br>它是一个画布，允许我们在JS中通过代码绘制图形以及实现一些好玩的动画</p>
+<p>百度统计图插件：Echarts就是基于canvas开发的</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>提供了很多强大的JS API</p>
+<p>API：Application Programming Interface 应用程序接口（凡是提供一个共别人调取使用的都可以称之为接口,例如：使用AJAX从服务器端获取数据，需要一个URL地址，此地址就是一个API，浏览器提供给我们很多常用的方法，每一个方法都可以叫做API）</p>
+</blockquote>
+<p><code>本地存储</code></p>
+<blockquote>
+<p>webStorage：<br>localStorage：本地信息存储<br>sessionStorage：本地会话存储</p>
+<p>在没有H5本地存储之前，我们都使用cookie做的本地存储</p>
+</blockquote>
+<p><code>获取本机地理位置</code></p>
+<blockquote>
+<p>通过H5可以获取当前用户地理位置（精度、纬度、精准度…），再结合第三方地图（高德地图、百度地图、腾讯地图…）API接口，实现一些生活服务的推荐等</p>
+</blockquote>
+<p><code>提供了新的通信方式：websocket</code></p>
+<blockquote>
+<p>想要实现实时通讯类的产品，基本上现在都是基于socket.io这个框架来完成的</p>
+</blockquote>
+<p><code>提供操作手机硬件功能的API</code></p>
+<blockquote>
+<p>调取手机的重力感应器，实现摇一摇，或者实现一些小游戏<br>调取手机的摄像头或者通讯录</p>
+<p>不是所有的手机浏览器都支持这些功能，即时支持这些功能的浏览器，在实现效果上也是不理想的（不稳定、卡顿等）</p>
+</blockquote>
+<p><code>H5离线缓存：manifest</code></p>
+<blockquote>
+<p>第一次连网请求完成页面，把信息缓存到本地，下一次即时断网的情况下，也可以看到上一次的信息</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML5/" rel="tag"># HTML5</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/15/专题汇总[this]/" rel="next" title="this问题汇总">
+                <i class="fa fa-chevron-left"></i> this问题汇总
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/15/WEB前端开发常用的优化技巧汇总/" rel="prev" title="WEB前端开发常用的优化技巧总结">
+                WEB前端开发常用的优化技巧总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/WechatIMG18.jpeg"
+                alt="林宇卿" />
+            
+              <p class="site-author-name" itemprop="name">林宇卿</p>
+              <p class="site-description motion-element" itemprop="description">一念清净，烈焰成池</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML5基础知识及项目实战"><span class="nav-number">1.</span> <span class="nav-text">HTML5基础知识及项目实战</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML5基础概述"><span class="nav-number">1.1.</span> <span class="nav-text">HTML5基础概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML5提供的新语法规范"><span class="nav-number">1.2.</span> <span class="nav-text">HTML5提供的新语法规范</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">林宇卿</span>
+
+  
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
